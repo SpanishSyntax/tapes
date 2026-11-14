@@ -1,9 +1,9 @@
 pub mod completions;
 pub mod config;
 pub mod eject;
+pub mod featured;
 pub mod insert;
 pub mod install;
 pub mod show;
 pub mod status;
 pub mod structs;
-pub mod featured;

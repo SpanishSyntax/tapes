@@ -99,13 +99,13 @@ pub enum Commands {
 
     /// Install a ready-made tape from the Official Repo (https://github.com/futurekismo-oss/featured-tapes)
     Featured {
-        /// Name of featured tape to install 
+        /// Name of featured tape to install
         source: String,
-        
+
         /// Custom name for the tape (defaults to folder or repository name).        
         #[arg(short, long)]
         name: Option<String>,
-        
+
         /// Skip install hooks.
         #[arg(long)]
         no_hooks: bool,
