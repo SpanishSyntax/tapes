@@ -132,8 +132,8 @@ Run `tapes --version` to ensure it worked. Make sure to add `~/.local/bin` to yo
 **Cargo**
 
 ```bash
-cargo install tapes-dotfiles@v0.1.8-beta.2
-cargo binstall tapes-dotfiles@v0.1.8-beta.2 # prebuilt binary instead of compiling
+cargo install tapes-dotfiles@v0.1.9-beta
+cargo binstall tapes-dotfiles@v0.1.9-beta # prebuilt binary instead of compiling
 
 # Note: The binary name is tapes
 ```

@@ -393,7 +393,7 @@ dependencies = [
 
 [[package]]
 name = "tapes-dotfiles"
-version = "0.1.8-beta.2"
+version = "0.1.9-beta"
 dependencies = [
  "anyhow",
  "clap",
