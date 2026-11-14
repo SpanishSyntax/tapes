@@ -48,6 +48,7 @@ fn find_targets_skips_git_and_manifest_files() {
         ".gitignore",
         ".editorconfig",
         "LICENSE",
+        "setup.sh",
         MARKER_FILE_NAME,
     ] {
         write(&dir.path().join(ignored), "ignore me");

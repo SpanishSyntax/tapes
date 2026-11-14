@@ -92,6 +92,7 @@ pub fn find_targets(path: &Path) -> Result<Vec<PathBuf>, anyhow::Error> {
         ".github",
         ".gitignore",
         ".editorconfig",
+        "setup.sh",
         "LICENSE",
         MARKER_FILE_NAME,
     ];
