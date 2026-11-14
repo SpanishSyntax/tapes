@@ -1,3 +1,7 @@
+> [!CAUTION]
+> This crate has been abandonded, the newer version is here https://crates.io/crates/tapes-rs
+
+
 <br />
 <div align="center">
 
@@ -132,8 +136,8 @@ Run `tapes --version` to ensure it worked. Make sure to add `~/.local/bin` to yo
 **Cargo**
 
 ```bash
-cargo install tapes-v2@v0.1.8-beta.1
-cargo binstall tapes-v2@v0.1.8-beta.1 # prebuilt binary instead of compiling
+cargo install tapes-v2@v0.1.8-beta.abandonded
+cargo binstall tapes-v2@v0.1.8-beta.abandonded # prebuilt binary instead of compiling
 ```
 
 Try to add `~/.cargo/bin` to your `$PATH` if `tapes --version` doesn't work
