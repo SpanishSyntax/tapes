@@ -97,6 +97,28 @@ pub enum Commands {
         full_clone: bool,
     },
 
+    /// Install a ready-made tape from the Official Repo (https://github.com/futurekismo-oss/featured-tapes)
+    Featured {
+        /// Name of featured tape to install 
+        source: String,
+        
+        /// Custom name for the tape (defaults to folder or repository name).        
+        #[arg(short, long)]
+        name: Option<String>,
+        
+        /// Skip install hooks.
+        #[arg(long)]
+        no_hooks: bool,
+
+        /// Automatically approve and run install hooks without prompting.
+        #[arg(short = 'y', long = "yes")]
+        yes: bool,
+
+        /// Overwrite existing tape installation.
+        #[arg(short, long)]
+        force: bool,
+    },
+
     /// Manage global tapes configuration.
     Config {
         #[command(subcommand)]

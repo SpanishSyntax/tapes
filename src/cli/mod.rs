@@ -6,3 +6,4 @@ pub mod install;
 pub mod show;
 pub mod status;
 pub mod structs;
+pub mod featured;
