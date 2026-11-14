@@ -43,15 +43,23 @@ pub fn display_tape_info(tape: TapeManifest, tapes_path: &Path) {
 
     println!("Path: {}", tapes_path.to_string_lossy());
 
+    if let Some(dependencies) = &tape.tape.dependencies {
+        println!("\nDependencies");
+
+        for deps in dependencies {
+            println!(" - {}", deps);
+        }
+    }
+
     if let Some(hooks) = &tape.hooks {
-        println!("Hooks");
+        println!("\nHooks");
         print_hooks_section("Install", &hooks.install);
         print_hooks_section("Insert", &hooks.insert);
         print_hooks_section("Eject", &hooks.eject);
     }
 
     if let Ok(targets) = find_targets(tapes_path) {
-        println!("Targets");
+        println!("\nTargets");
 
         for target in targets {
             let folder_name = target
