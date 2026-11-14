@@ -132,8 +132,10 @@ Run `tapes --version` to ensure it worked. Make sure to add `~/.local/bin` to yo
 **Cargo**
 
 ```bash
-cargo install tapes-v2@v0.1.8-beta.1
-cargo binstall tapes-v2@v0.1.8-beta.1 # prebuilt binary instead of compiling
+cargo install tapes-dotfiles@v0.1.8-beta.2
+cargo binstall tapes-dotfiles@v0.1.8-beta.2 # prebuilt binary instead of compiling
+
+# Note: The binary name is tapes
 ```
 
 Try to add `~/.cargo/bin` to your `$PATH` if `tapes --version` doesn't work
@@ -245,7 +247,7 @@ Now, let's explain the terms you'll come across while using this program.
 
 **How can I get tapes?**
 
-See [Installation](#installation). The quickest way is the install script, or `cargo install tapes-v2`
+See [Installation](#installation). The quickest way is the install script, or `cargo install tapes-dotfiles`
 
 **How can I make my config use tapes? / How do I make my local config a tape?**
 

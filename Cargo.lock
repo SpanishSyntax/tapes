@@ -392,8 +392,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "tapes-v2"
-version = "0.1.8-beta.1"
+name = "tapes-dotfiles"
+version = "0.1.8-beta.2"
 dependencies = [
  "anyhow",
  "clap",
