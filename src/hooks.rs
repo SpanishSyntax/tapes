@@ -185,7 +185,7 @@ pub fn run_install_hooks(
         return Ok(());
     }
 
-    if !yes && !confirm_install_hooks(&manifest.tape.name, hooks, quiet) {
+    if !yes && !confirm_install_hooks(target_dir, &manifest.tape.name, hooks, quiet) {
         return Ok(());
     }
 
@@ -197,7 +197,7 @@ pub fn run_install_hooks(
     run_hooks(hooks, Some(target_dir), &envs, quiet)
 }
 
-fn confirm_install_hooks(tape_name: &str, hooks: &[String], quiet: bool) -> bool {
+fn confirm_install_hooks(tape_dir: &Path, tape_name: &str, hooks: &[String], quiet: bool) -> bool {
     if !std::io::stdin().is_terminal() {
         if !quiet {
             println!("Non-interactive terminal detected, skipping install hooks.");
@@ -208,6 +208,7 @@ fn confirm_install_hooks(tape_name: &str, hooks: &[String], quiet: bool) -> bool
     println!("\nTape '{tape_name}' defines the following install hook(s):");
     for hook in hooks {
         println!("  - '{hook}'");
+        print_script_contents(tape_dir, hook);
     }
 
     let confirmed = yes_or_no_prompt("Do you want to run these install hooks?");
@@ -216,4 +217,26 @@ fn confirm_install_hooks(tape_name: &str, hooks: &[String], quiet: bool) -> bool
     }
 
     confirmed
+}
+
+fn print_script_contents(tape_dir: &Path, hook: &str) {
+    let is_file = hook.starts_with("./");
+    let is_script = hook.ends_with(".sh");
+
+    if !is_file && !is_script {
+        return;
+    }
+
+    let hook = hook.strip_prefix("./").unwrap_or(hook);
+    let path = tape_dir.join(hook);
+
+    let Ok(contents) = std::fs::read_to_string(&path) else {
+        return;
+    };
+
+    println!("    --- [{}] ---", hook);
+    for line in contents.lines() {
+        println!("    | {}", line);
+    }
+    println!("    --------------------------");
 }
