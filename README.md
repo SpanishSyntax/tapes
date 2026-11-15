@@ -424,8 +424,8 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
 ## Roadmap
 
 - [x] A GUI - [https://github.com/LilaccFlowerr/tapes-deck](https://github.com/LilaccFlowerr/tapes-deck)
+- [x] Dependencies checking
 - [ ] Colored output
-- [ ] Dependencies checking
 
 ---
 
