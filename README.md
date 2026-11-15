@@ -348,58 +348,58 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
 
 #### Special Thanks & Non-Code Contributors
 
-<table>
+<table align="center" border="0" cellspacing="0" cellpadding="10">
   <tr>
-    <td align="center">
+    <td align="center" width="160">
       <a href="https://github.com/exotic-erox">
-        <img src="https://github.com/exotic-erox.png" width="64px;" alt=""/><br />
+        <img src="https://github.com/exotic-erox.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
         <sub><b>exotic-erox</b></sub>
       </a><br />
       🐛 Bug Reports
     </td>
-    <td align="center">
+    <td align="center" width="160">
       <a href="https://github.com/LilaccFlowerr">
-        <img src="https://github.com/LilaccFlowerr.png" width="64px;" alt=""/><br />
+        <img src="https://github.com/LilaccFlowerr.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
         <sub><b>LilaccFlowerr</b></sub>
       </a><br />
       🎨 GUI & Showcase
     </td>
-    <td align="center">
+    <td align="center" width="160">
       <a href="https://github.com/sawankrs98-afk">
-        <img src="https://github.com/sawankrs98-afk.png" width="64px;" alt=""/><br />
+        <img src="https://github.com/sawankrs98-afk.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
         <sub><b>Saksham_Kumar</b></sub>
       </a><br />
       💻 Install Script
     </td>
-  </tr>
-  <tr>
-    <td align="center">
+    <td align="center" width="160">
       <a href="https://github.com/Mvkweb">
-        <img src="https://github.com/Mvkweb.png" width="64px;" alt=""/><br />
+        <img src="https://github.com/Mvkweb.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
         <sub><b>Mvk</b></sub>
       </a><br />
       💛 Support
     </td>
-    <td align="center">
+  </tr>
+  <tr>
+    <td align="center" width="160">
       <a href="https://github.com/Cloverthestars">
-        <img src="https://github.com/Cloverthestars.png" width="64px;" alt=""/><br />
+        <img src="https://github.com/Cloverthestars.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
         <sub><b>Clover</b></sub>
       </a><br />
       💛 Support
     </td>
-    <td align="center">
+    <td align="center" width="160">
       <a href="https://github.com/shreudi">
-        <img src="https://github.com/shreudi.png" width="64px;" alt=""/><br />
+        <img src="https://github.com/shreudi.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
         <sub><b>Marv</b></sub>
       </a><br />
       💡 Early Encouragement
     </td>
-    <td align="center">
+    <td align="center" width="160" colspan="2">
       <a href="https://github.com/amitxd75">
-        <img src="https://github.com/amitxd75.png" width="64px;" alt=""/><br />
+        <img src="https://github.com/amitxd75.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
         <sub><b>Amit</b></sub>
       </a><br />
-       💻 Install Command, General Fixes and Features, Performance refactors
+      💻 Install Command, General Fixes & Features, Performance Refactors
     </td>
   </tr>
 </table>
