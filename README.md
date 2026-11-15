@@ -139,7 +139,7 @@ cargo install tapes-dotfiles@v0.1.9-beta
 cargo binstall tapes-dotfiles@v0.1.9-beta # prebuilt binary
 ```
 
-> [!INFO]
+> [!NOTE]
 > The crate [tapes-v2](https://crates.io/crates/tapes-v2) has been abandoned in favour of [tapes-dotfiles](https://crates.io/crates/tapes-dotfiles)
 > Also thou the crate name is `tapes-dotfiles`, the binary name is `tapes`
 
