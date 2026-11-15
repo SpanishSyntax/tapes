@@ -379,7 +379,7 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
     <td align="center" width="130">
       <a href="https://github.com/sawankrs98-afk" title="Saksham_Kumar (Install Script)">
         <img src="https://github.com/sawankrs98-afk.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
-        <sub><b>Saksham_Kumar</b></sub>
+        <sub><b>Kuro</b></sub>
       </a>
     </td>
     <td align="center" width="130">
