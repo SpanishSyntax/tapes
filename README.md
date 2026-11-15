@@ -47,6 +47,9 @@ Either package a `~/.config` as a tape (put in it a folder, move to `~/.tapes` a
 tapes install https://github.com/some_user/cyberpunk --name cyberpunk 
 # if its in a specific branch or subdir in the repo, utilize the --branch and --dir subcommands
 
+# You want an official ready-made tape found at https://github.com/futurekismo-oss/featured-tapes
+tapes install-featured caelestia --name caelestia-featured
+
 # Insert a tape sitting in ~/.tapes
 tapes insert cyberpunk # tapes expects the tape in ~/.tapes/cyberpunk
 
@@ -133,13 +136,12 @@ Run `tapes --version` to ensure it worked. Make sure to add `~/.local/bin` to yo
 
 ```bash
 cargo install tapes-dotfiles@v0.1.9-beta
-cargo binstall tapes-dotfiles@v0.1.9-beta # prebuilt binary instead of compiling
-
-# Note: The binary name is tapes
+cargo binstall tapes-dotfiles@v0.1.9-beta # prebuilt binary
 ```
 
 > [!INFO]
 > The crate [tapes-v2](https://crates.io/crates/tapes-v2) has been abandoned in favour of [tapes-dotfiles](https://crates.io/crates/tapes-dotfiles)
+> Also thou the crate name is `tapes-dotfiles`, the binary name is `tapes`
 
 Try to add `~/.cargo/bin` to your `$PATH` if `tapes --version` doesn't work
 
@@ -326,6 +328,11 @@ No. straight to the point, It is completely human coded. 2 months of stress and 
 **Where are the tapes stored?**
 
 Its stored in `~/.tapes`, here you can find all your tapes and what config files (targets) it hits.
+
+**I have a cool rice and I want people with `tapes` to easily install it**
+
+Write a setup.sh and tape.toml that handles the installing and configuration of your rice and PR to [https://github.com/futurekismo-oss/featured-tapes](https://github.com/futurekismo-oss/featured-tapes). I'll review it and add it to the catalogue of featured-tapes so users can easily install it via ``tapes install-featured cool-rice``
+
 
 **Does tapes have a config file?**
 
