@@ -394,6 +394,13 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
       </a><br />
       💡 Early Encouragement
     </td>
+    <td align="center">
+      <a href="https://github.com/amitxd75">
+        <img src="https://github.com/amitxd75.png" width="64px;" alt=""/><br />
+        <sub><b>Amit</b></sub>
+      </a><br />
+       💻 Install Command, General Fixes and Features, Performance refactors
+    </td>
   </tr>
 </table>
 
