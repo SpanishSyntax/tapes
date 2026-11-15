@@ -340,7 +340,7 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
 
 ---
 
-### Contributors
+## Acknowledgement
 
 <a href="https://github.com/futurekismo-oss/tapes/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=futurekismo-oss/tapes" />
