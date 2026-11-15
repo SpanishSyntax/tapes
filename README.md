@@ -342,12 +342,6 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
 
 ## Acknowledgement
 
-<a href="https://github.com/futurekismo-oss/tapes/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=futurekismo-oss/tapes" />
-</a>
-
-#### Special Thanks & Non-Code Contributors
-
 <table align="center" border="0" cellspacing="0" cellpadding="10">
   <tr>
     <td align="center" width="130">
@@ -414,8 +408,6 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
     </td>
   </tr>
 </table>
-
-Made with [contrib.rocks](https://contrib.rocks).
 
 ---
 
