@@ -98,6 +98,7 @@ pub enum Commands {
     },
 
     /// Install a ready-made tape from the Official Repo (https://github.com/futurekismo-oss/featured-tapes)
+    #[command(name = "install-featured")]
     Featured {
         /// Name of featured tape to install
         source: String,
