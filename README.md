@@ -351,12 +351,35 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
 <table align="center" border="0" cellspacing="0" cellpadding="10">
   <tr>
     <td align="center" width="160">
+      <a href="https://github.com/futurekismo">
+        <img src="https://github.com/futurekismo.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>futurekismo</b></sub>
+      </a><br />
+      🛠️ Maker
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/evertiro">
+        <img src="https://github.com/evertiro.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>evertiro</b></sub>
+      </a><br />
+      💡 Advice
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/liixini">
+        <img src="https://github.com/liixini.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>liixini</b></sub>
+      </a><br />
+      💛 Advice & Support
+    </td>
+    <td align="center" width="160">
       <a href="https://github.com/exotic-erox">
         <img src="https://github.com/exotic-erox.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
         <sub><b>exotic-erox</b></sub>
       </a><br />
       🐛 Bug Reports
     </td>
+  </tr>
+  <tr>
     <td align="center" width="160">
       <a href="https://github.com/LilaccFlowerr">
         <img src="https://github.com/LilaccFlowerr.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
@@ -378,8 +401,6 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
       </a><br />
       💛 Support
     </td>
-  </tr>
-  <tr>
     <td align="center" width="160">
       <a href="https://github.com/Cloverthestars">
         <img src="https://github.com/Cloverthestars.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
@@ -387,6 +408,8 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
       </a><br />
       💛 Support
     </td>
+  </tr>
+  <tr>
     <td align="center" width="160">
       <a href="https://github.com/shreudi">
         <img src="https://github.com/shreudi.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
@@ -394,7 +417,7 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
       </a><br />
       💡 Early Encouragement
     </td>
-    <td align="center" width="160" colspan="2">
+    <td align="center" width="160" colspan="3">
       <a href="https://github.com/amitxd75">
         <img src="https://github.com/amitxd75.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
         <sub><b>Amit</b></sub>
