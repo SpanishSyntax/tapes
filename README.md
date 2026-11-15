@@ -365,9 +365,9 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
       🎨 GUI & Showcase
     </td>
     <td align="center">
-      <a href="https://github.com/saksham_kumar">
-        <img src="https://github.com/saksham_kumar.png" width="64px;" alt=""/><br />
-        <sub><b>saksham_kumar</b></sub>
+      <a href="https://github.com/sawankrs98-afk">
+        <img src="https://github.com/sawankrs98-afk.png" width="64px;" alt=""/><br />
+        <sub><b>Saksham_Kumar</b></sub>
       </a><br />
       💻 Install Script
     </td>
@@ -385,7 +385,7 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
         <img src="https://github.com/Cloverthestars.png" width="64px;" alt=""/><br />
         <sub><b>Clover</b></sub>
       </a><br />
-      🚀 Rewrite Inspiration
+      💛 Support
     </td>
     <td align="center">
       <a href="https://github.com/shreudi">
