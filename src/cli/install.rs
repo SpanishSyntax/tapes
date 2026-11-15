@@ -9,7 +9,7 @@ use std::{
 
 use crate::{
     AppState, hooks,
-    util::{expand_tilde, get_tapes_default_path},
+    util::{check_for_dependencies, expand_tilde, get_tapes_default_path},
 };
 
 pub struct InstallOptions {
@@ -56,6 +56,9 @@ pub fn run(opts: InstallOptions) -> Result<(), anyhow::Error> {
     record_installation(&tape_name, source_trimmed);
 
     let manifest = crate::util::load_manifest(&target_dir)?;
+
+    check_for_dependencies(&manifest, opts.yes);
+
     if let Err(err) =
         hooks::run_install_hooks(&manifest, &target_dir, opts.no_hooks, opts.yes, opts.quiet)
     {

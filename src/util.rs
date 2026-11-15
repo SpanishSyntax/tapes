@@ -195,3 +195,30 @@ pub fn get_all_tapes_in_dir(tapes_path: &Path) -> Result<Vec<PathBuf>, anyhow::E
 
     Ok(found_tapes)
 }
+
+pub fn check_for_dependencies(manifest: &TapeManifest, yes: bool) {
+    let Some(dependencies) = &manifest.tape.dependencies else {
+        return;
+    };
+
+    let missing_dependencies: Vec<&String> = dependencies
+        .iter()
+        .filter(|dep| !which::which(dep).is_ok())
+        .collect();
+
+    if missing_dependencies.is_empty() {
+        return;
+    }
+
+    println!(
+        "\nThese dependencies were not detected. \nPlease make sure you have them before continuing"
+    );
+
+    for dep in missing_dependencies {
+        println!(" - {}", dep);
+    }
+
+    if !yes {
+        yes_or_no_prompt("\nContinue:");
+    }
+}
