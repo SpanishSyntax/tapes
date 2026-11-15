@@ -138,6 +138,9 @@ cargo binstall tapes-dotfiles@v0.1.9-beta # prebuilt binary instead of compiling
 # Note: The binary name is tapes
 ```
 
+> [!INFO]
+> The crate [tapes-v2](https://crates.io/crates/tapes-v2) has been abandoned in favour of [tapes-dotfiles](https://crates.io/crates/tapes-dotfiles)
+
 Try to add `~/.cargo/bin` to your `$PATH` if `tapes --version` doesn't work
 
 **Nix**
