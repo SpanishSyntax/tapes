@@ -340,21 +340,71 @@ Usually it's a hook issue, check that first. If it's not a hook issue, then go t
 
 ---
 
-## Acknowledgements
+## Acknowledgement
 
-Thanks to these wonderful individuals for
+<a href="https://github.com/futurekismo-oss/tapes/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=futurekismo-oss/tapes" />
+</a>
 
-> [erotic-erox](https://github.com/exotic-erox) for calling out some lifecycle bugs on version 0.1.2-beta
+#### Special Thanks & Non-Code Contributors
 
-> [LilaccFlowerr](https://github.com/LilaccFlowerr) for providing the tapes showcase video and a GUI
+<table align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/exotic-erox">
+        <img src="https://github.com/exotic-erox.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>exotic-erox</b></sub>
+      </a><br />
+      🐛 Bug Reports
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/LilaccFlowerr">
+        <img src="https://github.com/LilaccFlowerr.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>LilaccFlowerr</b></sub>
+      </a><br />
+      🎨 GUI & Showcase
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/sawankrs98-afk">
+        <img src="https://github.com/sawankrs98-afk.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>Saksham_Kumar</b></sub>
+      </a><br />
+      💻 Install Script
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/Mvkweb">
+        <img src="https://github.com/Mvkweb.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>Mvk</b></sub>
+      </a><br />
+      💛 Support
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/Cloverthestars">
+        <img src="https://github.com/Cloverthestars.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>Clover</b></sub>
+      </a><br />
+      💛 Support
+    </td>
+    <td align="center" width="160">
+      <a href="https://github.com/shreudi">
+        <img src="https://github.com/shreudi.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>Marv</b></sub>
+      </a><br />
+      💡 Early Encouragement
+    </td>
+    <td align="center" width="160" colspan="2">
+      <a href="https://github.com/amitxd75">
+        <img src="https://github.com/amitxd75.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>Amit</b></sub>
+      </a><br />
+      💻 Install Command, General Fixes & Features, Performance Refactors
+    </td>
+  </tr>
+</table>
 
-> [saksham_kumar](https://github.com/saksham_kumar) for being a contributor and writing the beloved install command
-
-> [Mvk](https://github.com/Mvkweb) for providing lots of encouragement and support
-
-> [Clover](https://github.com/Cloverthestars) for providing the most encouragement and support, He encouraged the rewrite of tapes turning it from a broken mess to an actual usable utility
-
-> [Marv](https://github.com/shreudi) for encouraging me to build tapes after i pitched the initial idea, without him, tapes would still be a random afternoon thought
+Made with [contrib.rocks](https://contrib.rocks).
 
 ---
 
