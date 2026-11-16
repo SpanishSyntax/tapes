@@ -14,7 +14,7 @@ jobs:
   validate:
     permissions:
       contents: read
-    uses: ./.github/workflows/lint.yml
+    uses: $/.github/workflows/lint.yml
 
   build:
     needs: validate
