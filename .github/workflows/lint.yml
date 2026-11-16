@@ -1,12 +1,20 @@
 name: Lint & Check
 
 on:
+  workflow_call:
   push:
     branches:
       - main
     paths:
-      - 'src/**'
-      - '**.rs'
+      - "src/**"
+      - "**/*.rs"
+      - "**/Cargo.toml"
+      - "**/Cargo.lock"
+      - ".cargo/**"
+      - "rust-toolchain*"
+      - "rustfmt.toml"
+      - ".rustfmt.toml"
+      - ".github/workflows/lint.yml"
   pull_request:
 
 concurrency:
@@ -16,36 +24,40 @@ concurrency:
 env:
   CARGO_TERM_COLOR: always
   CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS: "-C link-arg=-fuse-ld=mold"
+  RUSTC_WRAPPER: ""
 
 jobs:
   lint:
     name: Lint & Check
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Install build dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y mold clang sccache
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
 
       - name: Set up Rust toolchain
         uses: dtolnay/rust-toolchain@stable
         with:
           components: rustfmt, clippy
 
-      - name: Cache Cargo dependencies
-        uses: Swatinem/rust-cache@v2
-
-      - name: Cargo Check
-        run: cargo check --verbose
-
-      - name: Cargo Clippy
-        run: cargo clippy --all-targets -- -D warnings
-
       - name: Check Formatting
         run: cargo fmt --check
 
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mold clang
+
+      - name: Cache Cargo dependencies
+        uses: Swatinem/rust-cache@v2
+
+      - name: Cargo Clippy
+        run: cargo clippy --locked --all-targets -- -D warnings
+
       - name: Cargo Test
-        run: cargo test --verbose
+        run: cargo test --locked --verbose
