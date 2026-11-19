@@ -23,13 +23,11 @@ Get it all back in one command.
 
 </div>
 
----
 
 ## Tapes in Action
 
 https://github.com/user-attachments/assets/fc3c07b0-7eee-448a-94c5-9d560c288512
 
----
 
 ## Quickstart
 
@@ -66,7 +64,6 @@ You can also browse ready-to-use tapes in the [featured-tapes](https://github.co
 | `-q / -v` | Quiet / verbose output |
 | `-l, --logging` | Show logs (attach these when reporting issues) |
 
----
 
 ## The tape format
 
@@ -107,7 +104,6 @@ eject = [
 
 > ⚠️ If you install a tape from someone else's repo, read their `tape.toml` hooks before inserting. You shouldn't have to, but you should.
 
----
 
 ## 📦 Installation
 
@@ -149,7 +145,6 @@ Check that `tapes --version` works; add `~/.local/bin` or `~/.cargo/bin` to your
 source <(COMPLETIONS=zsh tapes)   # also: fish, bash, elvish, nushell
 ```
 
----
 
 ## Global configuration
 
@@ -184,7 +179,6 @@ Hook environment variables: `$TAPE_NAME`, `$TAPE_DIR`, `$CONFIG_DIR`.
 
 </details>
 
----
 
 ## How it works
 
@@ -195,7 +189,6 @@ Hook environment variables: `$TAPE_NAME`, `$TAPE_DIR`, `$CONFIG_DIR`.
 
 **Why it matters:** install scripts for rices tend to stomp your configs or back the whole folder up and dump you in a fresh one. Tapes keeps everything the tape doesn't provide (your `chromium/` keys, whatever) untouched, requires only one command each way, and works on any distro because it never cares what the folders are. Linux only: atomic swap relies on a Linux syscall.
 
----
 
 ## FAQ
 
@@ -276,7 +269,6 @@ Update first (`tapes --version`), then re-run with `--logging` and [open an issu
 
 </details>
 
----
 
 ## Roadmap
 
@@ -284,7 +276,6 @@ Update first (`tapes --version`), then re-run with `--logging` and [open an issu
 - [x] Dependency checking
 - [ ] Colored output
 
----
 
 ## Contributing
 
