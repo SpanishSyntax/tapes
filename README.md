@@ -102,7 +102,8 @@ eject = [
 # install = [] # also exists
 ```
 
-> ⚠️ If you install a tape from someone else's repo, read their `tape.toml` hooks before inserting. You shouldn't have to, but you should.
+> [!NOTE]
+> If you install a tape from someone else's repo, read their `tape.toml` hooks before inserting. You shouldn't have to, but you should.
 
 
 ## 📦 Installation
@@ -187,7 +188,7 @@ Hook environment variables: `$TAPE_NAME`, `$TAPE_DIR`, `$CONFIG_DIR`.
 - **Hooks** — shell commands run after insert, eject, or install.
 - **Atomic** — there is no in-between. Tapes builds a complete, valid config (`~/.config.tapes`) out of symlinks from the tape plus everything else you already had, then swaps it with `~/.config` via the Linux `renameat` syscall in a single instant. Everything before the swap is trivially rollable back by deleting `~/.config.tapes`.
 
-**Why it matters:** install scripts for rices tend to stomp your configs or back the whole folder up and dump you in a fresh one. Tapes keeps everything the tape doesn't provide (your `chromium/` keys, whatever) untouched, requires only one command each way, and works on any distro because it never cares what the folders are. Linux only: atomic swap relies on a Linux syscall.
+**Why it matters:** install scripts override your configs or backup the whole folder and makes a fresh one. This means you might lose your hyprland or chromium keys forcing you to lose your keybinds or have to login again to your gmail. Tapes keeps everything the tape doesn't provide and leaves your `chromium/` keys or whatever untouched. It requires one command to try out a new config and another to return back to your previous one and because it only touches `~/.config`, it works on every distro, every WM/DE as well as every rice. However tapes utilizes the linux `renameat2` syscall so it only works on linux (for now)
 
 
 ## FAQ
