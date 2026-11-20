@@ -351,21 +351,27 @@ I also recommend to join the [Discord](https://discord.gg/TVjsGzFAur) if you wan
       </a>
     </td>
   </tr>
-  <tr>
+ <tr>
     <td align="center" width="130">
       <a href="https://github.com/amitxd75" title="Amit (Install Command, General Fixes & Features, Performance Refactors)">
         <img src="https://github.com/amitxd75.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
         <sub><b>Amit</b></sub>
       </a>
     </td>
-     <td align="center" width="130">
-     </td>
     <td align="center" width="130">
+      <a href="https://github.com/magnagy" title="Magnagy (Fixed Spelling and Grammar Errors in Readme)">
+        <img src="https://github.com/magnagy.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>Magnagy</b></sub>
+      </a>
     </td>
     <td align="center" width="130">
-     </td>
-    <td align="center" width="130">
-     </td>
+      <a href="https://github.com/SpanishSyntax" title="SpanishSyntax (Nix)">
+        <img src="https://github.com/SpanishSyntax.png" width="64px;" style="border-radius: 50%;" alt=""/><br />
+        <sub><b>SpanishSyntax</b></sub>
+      </a>
+    </td>
+    <td align="center" width="130"></td>
+    <td align="center" width="130"></td>
   </tr>
 </table>
 
