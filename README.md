@@ -375,6 +375,11 @@ I also recommend to join the [Discord](https://discord.gg/TVjsGzFAur) if you wan
   </tr>
 </table>
 
+## Related
+
+- [tapes-deck](https://github.com/LilaccFlowerr/tapes-deck) - GUI for Tapes
+- [featured-tapes](https://github.com/futurekismo-oss/featured-tapes) - A curation of ready to use tapes
+
 ## Star History
 
 <a href="https://star-history.com/#futurekismo-oss/tapes&Date">
