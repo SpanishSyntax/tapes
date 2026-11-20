@@ -3,7 +3,7 @@
   lib,
   mold,
 }: let
-  cargoToml = builtins.fromTOML (builtins.readFile ../Cargo.toml);
+  cargoToml = fromTOML (builtins.readFile ../Cargo.toml);
 in
   rustPlatform.buildRustPackage {
     pname = "tapes";

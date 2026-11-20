@@ -4,7 +4,8 @@
   fetchurl,
   autoPatchelfHook,
 }: let
-  version = "0.1.10-beta.1";
+  cargoToml = fromTOML (builtins.readFile ../Cargo.toml);
+  version = cargoToml.package.version;
 in
   stdenv.mkDerivation {
     pname = "tapes-bin";

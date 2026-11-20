@@ -126,8 +126,13 @@ cargo binstall tapes-dotfiles@v0.1.10-beta.1   # prebuilt binary
 **Nix**
 
 ```bash
+# From source
 nix run github:futurekismo-oss/tapes
 nix profile install github:futurekismo-oss/tapes
+
+# Prebuilt Binary
+nix run github:futurekismo-oss/tapes#tapes-bin
+nix profile install github:futurekismo-oss/tapes#tapes-bin
 ```
 
 **From source**

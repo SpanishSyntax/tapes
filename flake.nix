@@ -14,29 +14,21 @@
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {inherit system;};
       tapes-src = pkgs.callPackage ./nix/package.nix {};
-      tapes-bin = pkgs.callPackage ./nix/bin.nix {};
-      useBin =
-        system == "x86_64-linux"
-        && tapes-bin.version == tapes-src.version
-        && pkgs.lib.versionAtLeast pkgs.glibc.version "2.39";
     in {
       packages =
         {
-          default =
-            if useBin
-            then tapes-bin
-            else tapes-src;
+          default = tapes-src;
           tapes = tapes-src;
           inherit tapes-src;
         }
         // pkgs.lib.optionalAttrs (system == "x86_64-linux") {
-          inherit tapes-bin;
+          tapes-bin = pkgs.callPackage ./nix/bin.nix {};
         };
     })
     // {
       overlays = {
         default = final: prev: {
-          tapes = self.packages.${prev.stdenv.hostPlatform.system}.default;
+          tapes = self.packages.${prev.stdenv.hostPlatform.system}.tapes-src;
         };
         tapes = self.overlays.default;
       };
